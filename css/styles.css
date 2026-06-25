@@ -4,7 +4,6 @@
   --green-800: #054224;
   --green-600: #1f7a4d;
   --green-brand: #69ca97;
-  --green-brand-dark: #42ba7b;
   --earth-300: #c9a880;
   --cream-100: #f7f3ea;
   --cream-200: #efe7d6;
@@ -93,7 +92,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary { background: var(--green-brand); color: var(--green-950); }
-.btn-primary:hover { background: var(--green-brand-dark); }
+.btn-primary:hover { filter: brightness(0.93); }
 .btn-ghost { background: transparent; color: var(--cream-100); border-color: rgba(255,255,255,0.5); }
 .site-header.is-scrolled .btn-ghost { color: var(--green-900); border-color: var(--green-900); }
 .btn-whatsapp { background: #1f7a3d; color: var(--white); padding: 10px 18px; }
@@ -201,7 +200,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   height: 58px;
   border-radius: 50%;
   background: var(--cream-200);
-  color: var(--green-brand-dark);
+  color: var(--green-brand);
   display: grid;
   place-items: center;
   margin-bottom: 20px;
