@@ -366,8 +366,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 
 .site-footer { background: var(--green-brand); color: rgba(2,28,15,0.75); padding: 28px 0; border-top: 1px solid rgba(2,28,15,0.12); }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; }
-.footer-brand { display: flex; align-items: center; gap: 10px; color: var(--green-950); }
-.footer-brand .logo-text { color: var(--green-950); }
+.footer-brand { display: flex; align-items: center; gap: 10px; color: var(--white); }
+.footer-brand .logo-text { color: var(--white); }
 .footer-inner a:hover { color: var(--green-950); }
 
 @media (max-width: 960px) {
