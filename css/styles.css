@@ -1,9 +1,11 @@
 :root {
-  --green-900: #1c2e1a;
-  --green-800: #254020;
-  --green-700: #2f5128;
-  --green-600: #3c6633;
-  --green-500: #4d7d40;
+  --green-950: #021c0f;
+  --green-900: #02311a;
+  --green-800: #054224;
+  --green-700: #115f38;
+  --green-600: #1f7a4d;
+  --green-500: #30a66b;
+  --mint-400: #66cc99;
   --earth-700: #6b4f3a;
   --earth-300: #c9a880;
   --cream-100: #f7f3ea;
@@ -11,7 +13,7 @@
   --ink: #1c2018;
   --white: #ffffff;
   --radius: 14px;
-  --shadow-soft: 0 18px 40px -16px rgba(28, 46, 26, 0.35);
+  --shadow-soft: 0 18px 40px -16px rgba(2, 49, 26, 0.35);
   --font-display: "Fraunces", serif;
   --font-body: "Manrope", system-ui, sans-serif;
 }
@@ -53,7 +55,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 }
 .site-header.is-scrolled {
   background: rgba(247, 243, 234, 0.96);
-  box-shadow: 0 4px 24px -8px rgba(28, 46, 26, 0.25);
+  box-shadow: 0 4px 24px -8px rgba(2, 49, 26, 0.25);
   backdrop-filter: blur(6px);
 }
 .header-inner {
@@ -65,23 +67,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   padding-bottom: 18px;
 }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); }
-.logo-mark {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--green-700);
-  color: var(--cream-100);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.logo-mark-img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 1px 3px rgba(2, 28, 15, 0.3));
 }
 .logo-text { color: var(--green-900); font-size: 18px; }
 .logo-text strong { font-weight: 600; }
-.site-header:not(.is-scrolled) .logo-text,
-.site-header:not(.is-scrolled) .logo-mark { color: var(--cream-100); }
-.site-header:not(.is-scrolled) .logo-mark { background: rgba(255,255,255,0.18); }
+.site-header:not(.is-scrolled) .logo-text { color: var(--cream-100); }
 
 .main-nav { display: flex; gap: 32px; font-weight: 600; font-size: 15px; }
 .main-nav a { color: var(--cream-100); opacity: 0.92; transition: opacity 0.2s; }
@@ -136,7 +129,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20,32,18,0.55) 0%, rgba(20,32,18,0.5) 45%, rgba(15,24,13,0.85) 100%);
+  background: linear-gradient(180deg, rgba(2,49,26,0.55) 0%, rgba(2,49,26,0.5) 45%, rgba(2,28,15,0.85) 100%);
 }
 .hero-content { position: relative; z-index: 2; max-width: 720px; padding-top: 80px; }
 .eyebrow {
@@ -203,7 +196,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   border-radius: var(--radius);
   padding: 32px 28px;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(28,46,26,0.06);
+  border: 1px solid rgba(2,49,26,0.06);
 }
 .service-icon {
   width: 58px;
@@ -224,7 +217,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   border-radius: var(--radius);
   padding: 36px 32px;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(28,46,26,0.06);
+  border: 1px solid rgba(2,49,26,0.06);
 }
 .checklist-title { font-size: 19px; margin-bottom: 22px; }
 .checklist-grid {
@@ -290,7 +283,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 }
 .zones-grid li {
   background: var(--white);
-  border: 1px solid rgba(28,46,26,0.08);
+  border: 1px solid rgba(2,49,26,0.08);
   border-radius: 10px;
   padding: 14px 16px;
   font-weight: 600;
@@ -312,7 +305,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   position: absolute;
   inset: auto 0 0 0;
   padding: 16px;
-  background: linear-gradient(180deg, rgba(28,46,26,0) 0%, rgba(20,32,18,0.85) 100%);
+  background: linear-gradient(180deg, rgba(2,49,26,0) 0%, rgba(20,32,18,0.85) 100%);
   color: var(--cream-100);
   font-size: 13.5px;
   font-weight: 500;
@@ -366,7 +359,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   font-size: 15px;
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid rgba(28,46,26,0.18);
+  border: 1px solid rgba(2,49,26,0.18);
   background: var(--white);
   resize: vertical;
 }
@@ -376,6 +369,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 .site-footer { background: var(--green-900); color: rgba(247,243,234,0.7); padding: 28px 0; border-top: 1px solid rgba(255,255,255,0.08); }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; }
 .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--cream-100); }
+.footer-brand .logo-text { color: var(--cream-100); }
 .footer-inner a:hover { color: var(--cream-100); }
 
 @media (max-width: 960px) {
