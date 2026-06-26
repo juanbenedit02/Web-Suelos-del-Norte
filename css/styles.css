@@ -189,32 +189,34 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
 .service-card {
-  background: var(--green-brand);
-  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid rgba(2,49,26,0.1);
+  border-left: 4px solid var(--green-brand);
+  border-radius: 8px;
   padding: 32px 28px;
-  box-shadow: var(--shadow-soft);
 }
 .service-icon {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: var(--white);
+  background: rgba(105,202,151,0.15);
   color: var(--green-brand);
   display: grid;
   place-items: center;
   margin-bottom: 20px;
 }
-.service-card h3 { font-size: 19px; margin-bottom: 10px; color: var(--white); }
-.service-card p { color: rgba(255,255,255,0.85); font-size: 15px; margin: 0; }
+.service-card h3 { font-size: 19px; margin-bottom: 10px; }
+.service-card p { color: #4a4a40; font-size: 15px; margin: 0; }
 
 .checklist-block {
   margin-top: 56px;
-  background: var(--green-brand);
-  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid rgba(2,49,26,0.1);
+  border-left: 4px solid var(--green-brand);
+  border-radius: 8px;
   padding: 36px 32px;
-  box-shadow: var(--shadow-soft);
 }
-.checklist-title { font-size: 19px; margin-bottom: 22px; color: var(--white); }
+.checklist-title { font-size: 19px; margin-bottom: 22px; }
 .checklist-grid {
   list-style: none;
   margin: 0;
@@ -227,7 +229,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   position: relative;
   padding-left: 28px;
   font-size: 15px;
-  color: var(--white);
+  color: #3a3a32;
   font-weight: 500;
 }
 .checklist-grid li::before {
@@ -238,7 +240,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--green-brand);
 }
 .checklist-grid li::after {
   content: "";
@@ -247,8 +249,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   top: 7px;
   width: 7px;
   height: 4px;
-  border-left: 2px solid var(--green-brand);
-  border-bottom: 2px solid var(--green-brand);
+  border-left: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
   transform: rotate(-45deg);
 }
 
