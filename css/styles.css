@@ -6,7 +6,7 @@
   --green-brand: #69ca97;
   --earth-300: #c9a880;
   --cream-100: #ffffff;
-  --cream-200: #f5fbf8;
+  --cream-200: #ffffff;
   --ink: #1c2018;
   --white: #ffffff;
   --radius: 14px;
@@ -190,16 +190,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
 .service-card {
   background: var(--white);
-  border: 1px solid rgba(2,49,26,0.1);
-  border-left: 4px solid var(--green-brand);
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 32px 28px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(2,49,26,0.06);
 }
 .service-icon {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: rgba(105,202,151,0.15);
+  background: var(--cream-200);
   color: var(--green-brand);
   display: grid;
   place-items: center;
@@ -211,10 +211,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 .checklist-block {
   margin-top: 56px;
   background: var(--white);
-  border: 1px solid rgba(2,49,26,0.1);
-  border-left: 4px solid var(--green-brand);
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 36px 32px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(2,49,26,0.06);
 }
 .checklist-title { font-size: 19px; margin-bottom: 22px; }
 .checklist-grid {
@@ -249,8 +249,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   top: 7px;
   width: 7px;
   height: 4px;
-  border-left: 2px solid var(--white);
-  border-bottom: 2px solid var(--white);
+  border-left: 2px solid var(--green-950);
+  border-bottom: 2px solid var(--green-950);
   transform: rotate(-45deg);
 }
 
@@ -280,9 +280,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
 }
 .zones-grid li {
   background: var(--white);
-  border: 1px solid rgba(2,49,26,0.1);
-  border-left: 4px solid var(--green-brand);
-  border-radius: 8px;
+  border: 1px solid rgba(2,49,26,0.08);
+  border-radius: 10px;
   padding: 14px 16px;
   font-weight: 600;
   font-size: 14.5px;
