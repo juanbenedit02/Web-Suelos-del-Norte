@@ -6,7 +6,7 @@
   --green-brand: #69ca97;
   --earth-300: #c9a880;
   --cream-100: #ffffff;
-  --cream-200: #ffffff;
+  --cream-200: #f5fbf8;
   --ink: #1c2018;
   --white: #ffffff;
   --radius: 14px;
@@ -277,13 +277,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; colo
   gap: 14px;
 }
 .zones-grid li {
-  background: var(--green-brand);
-  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid rgba(2,49,26,0.1);
+  border-left: 4px solid var(--green-brand);
+  border-radius: 8px;
   padding: 14px 16px;
   font-weight: 600;
   font-size: 14.5px;
-  color: var(--white);
-  box-shadow: var(--shadow-soft);
+  color: var(--green-900);
 }
 .zones-note { margin-top: 28px; color: #5a5a4f; font-size: 14.5px; }
 
