@@ -1,0 +1,97 @@
+/* Layout exclusivo de la guía de estilos — no afecta al sitio */
+
+.ds-body { background: var(--white); padding-top: 0; }
+
+.ds-header {
+  background: var(--green-900);
+  color: var(--white);
+  padding: 56px 0 40px;
+}
+.ds-header .eyebrow { color: var(--earth-300); }
+.ds-header h1 { color: var(--white); font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 10px; }
+.ds-header p { color: rgba(255,255,255,0.82); font-size: 16px; max-width: 620px; margin: 0; }
+
+.ds-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(2,49,26,0.1);
+}
+.ds-nav .container { display: flex; gap: 24px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+.ds-nav a { font-size: 13.5px; font-weight: 700; color: var(--green-800); text-transform: uppercase; letter-spacing: 0.6px; }
+.ds-nav a:hover { color: var(--green-brand); }
+
+.ds-section { padding: 64px 0; border-bottom: 1px solid rgba(2,49,26,0.08); }
+.ds-section-title { font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 8px; }
+.ds-section-desc { color: #4a4a40; max-width: 640px; margin-bottom: 36px; }
+
+/* Colors */
+.ds-color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.ds-swatch {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(2,49,26,0.1);
+  box-shadow: var(--shadow-soft);
+}
+.ds-swatch-color { height: 88px; }
+.ds-swatch-meta { padding: 12px 14px; background: var(--white); }
+.ds-swatch-name { font-weight: 700; font-size: 14px; color: var(--green-900); display: block; }
+.ds-swatch-hex { font-size: 12.5px; color: #6a6a5f; font-family: monospace; }
+.ds-swatch-var { font-size: 12px; color: #8a8a7f; font-family: monospace; display: block; margin-top: 2px; }
+
+/* Typography */
+.ds-type-row { display: flex; align-items: baseline; gap: 24px; padding: 18px 0; border-bottom: 1px dashed rgba(2,49,26,0.12); flex-wrap: wrap; }
+.ds-type-row:last-child { border-bottom: none; }
+.ds-type-label { flex: 0 0 160px; font-size: 12.5px; font-family: monospace; color: #6a6a5f; }
+.ds-type-sample { flex: 1; min-width: 240px; }
+.ds-font-tag { display: inline-block; margin-top: 6px; font-size: 12px; font-family: monospace; color: #8a8a7f; }
+
+/* Component showcase */
+.ds-swatch-block { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 20px; }
+.ds-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.ds-chip-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ds-token-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.ds-token-table th, .ds-token-table td { text-align: left; padding: 10px 14px; border-bottom: 1px solid rgba(2,49,26,0.08); }
+.ds-token-table th { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.6px; color: #6a6a5f; }
+.ds-token-table td code { font-family: monospace; font-size: 13px; color: var(--green-800); }
+
+.ds-radius-demo, .ds-shadow-demo {
+  width: 96px; height: 96px;
+  background: var(--white);
+  border: 1px solid rgba(2,49,26,0.1);
+  display: grid; place-items: center;
+  font-size: 11px; color: #6a6a5f; font-family: monospace;
+}
+
+.ds-logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; }
+.ds-logo-card { border-radius: var(--radius); border: 1px solid rgba(2,49,26,0.1); padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.ds-logo-card.is-dark { background: var(--green-900); }
+.ds-logo-card img { height: 56px; width: auto; }
+.ds-logo-card span { font-size: 12.5px; font-family: monospace; color: #6a6a5f; }
+.ds-logo-card.is-dark span { color: rgba(255,255,255,0.7); }
+
+@media (max-width: 720px) {
+  .ds-type-label { flex-basis: 100%; }
+}
+
+@media print {
+  @page { margin: 14mm 12mm; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .ds-nav { position: static; }
+  .ds-swatch, .service-card, .checklist-block, .ds-logo-card, .contact-form,
+  .ds-type-row, .zones-grid li, .ds-chip-row > *, .ds-radius-demo, .ds-shadow-demo,
+  .ds-token-table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .ds-section-title, .ds-section-desc, .ds-header {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .site-footer a { display: none; }
+  .ds-swatch, .service-card, .checklist-block, .ds-logo-card, .contact-form {
+    box-shadow: none !important;
+  }
+}
